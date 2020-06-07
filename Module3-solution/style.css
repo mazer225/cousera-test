@@ -10,10 +10,16 @@ body{
 	border:0;
 	border: 2px solid black;
 }
+p{
+	text-align: justify;
+}
 .navbar-brand{
 	height:80px;
 	padding-top:15px;
 	padding-left:0px;
+}
+header  .container-fluid {
+	background-color:gray;
 }
 .navbar-brand h1{
 	font-size: 40px;
@@ -22,26 +28,18 @@ body{
 	align-content: left;
 	padding-left:0px;
 }
-
-
-#nav-list {
-  margin-top: 10px;
-}
 #nav-list a {
   color: #951C49;
   text-align: center;
+  background-color:white;
 }
 #nav-list a:hover {
   background: #E7E7E7;
-}
-#nav-list a span {
-  font-size: 1.8em;
 }
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
   border: 1px solid black;
 }
 .navbar-header button.navbar-toggle {
-  /*clear: both;*/
   margin-top: 10px;
 }
 #chicken , #beef, #sushi{
@@ -56,11 +54,30 @@ body{
 	margin-bottom:15px;
 }
 #chicken >h2 ,#beef >h2 ,#sushi >h2 {
-  
+	margin:0;
 	margin-bottom:10px;
 	text-align: center;
 }
 /********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    /*padding-top: 10px;*/
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+  #collapsable-nav a {
+  	background-color:white;
+  	color:black;
+  	margin:0;
+  	border:1px solid black; /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+
+}
 
 
 
